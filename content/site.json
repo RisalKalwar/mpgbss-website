@@ -76,19 +76,6 @@
       }
     ]
   },
-  "teachers": {
-    "eyebrow": "Saleem",
-    "title": "Saleem Memon",
-    "intro": "teacher",
-    "list": [
-      {
-        "name": "Saleem Memon Khaskheli",
-        "subject": "MAths",
-        "qualification": "BE",
-        "bio": "he good "
-      }
-    ]
-  },
   "classes_section": {
     "eyebrow": "Classes and sections",
     "title": "Class 1 to Class 10, in two sections",
