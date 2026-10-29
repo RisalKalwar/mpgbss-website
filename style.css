@@ -156,20 +156,27 @@ p { margin: 0 0 1em; }
 }
 .chips li::before { content: "✓"; color: var(--gold); margin-right: 8px; font-weight: 700; }
 .hero-art { position: relative; display: grid; place-items: center; }
+/* Logo circle: fixed sizes (no aspect-ratio) so it stays centred on every phone browser */
+.hero-art { min-height: 420px; }
 .hero-art .halo {
-  width: min(380px, 80vw); aspect-ratio: 1; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,.97) 58%, rgba(255,255,255,.0) 59%),
-              conic-gradient(from 0deg, var(--gold), transparent 30%, var(--gold) 50%, transparent 80%, var(--gold));
-  display: grid; place-items: center; padding: 14px;
-  box-shadow: 0 30px 80px -20px rgba(0,0,0,.55);
+  --size: 380px;
+  position: relative; flex: none;
+  width: var(--size); height: var(--size); border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 12px var(--gold), 0 0 0 13px rgba(255,255,255,.35), 0 30px 80px -20px rgba(0,0,0,.55);
   animation: float 6s ease-in-out infinite;
 }
-.hero-art .halo::before {
-  content: ""; position: absolute; width: min(410px, 86vw); aspect-ratio: 1; border-radius: 50%;
-  border: 1px dashed rgba(212,167,44,.55); animation: spin 40s linear infinite;
+.hero-art .ring {
+  position: absolute; top: -28px; left: -28px; right: -28px; bottom: -28px; border-radius: 50%;
+  border: 1px dashed rgba(212,167,44,.6); animation: spin 40s linear infinite; pointer-events: none;
 }
-.hero-art .crest-lg { width: 74%; }
-.hero-art .crest-lg img { width: 100%; }
+.hero-art .crest-lg {
+  position: absolute; top: 50%; left: 50%;
+  width: 68%; height: 71.4%; /* crest is 400 x 420 */
+  -webkit-transform: translate(-50%, -48%); transform: translate(-50%, -48%);
+}
+.hero-art .crest-lg svg, .hero-art .crest-lg img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.brand .crest-sm svg, .footer .crest-sm svg { display: block; width: 100%; height: 100%; }
 @keyframes float { 50% { transform: translateY(-12px); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 .hero-wave { position: absolute; left: 0; right: 0; bottom: -1px; height: 70px; width: 100%; }
@@ -178,8 +185,9 @@ p { margin: 0 0 1em; }
   .hero { padding: 56px 0 96px; }
   .hero .wrap { grid-template-columns: 1fr; gap: 36px; }
   .hero-art { order: -1; }
-  .hero-art .halo { width: 220px; }
-  .hero-art .halo::before { width: 244px; }
+  .hero-art { min-height: 290px; }
+  .hero-art .halo { --size: 220px; width: 220px; height: 220px; box-shadow: 0 0 0 8px var(--gold), 0 0 0 9px rgba(255,255,255,.35), 0 20px 50px -16px rgba(0,0,0,.55); }
+  .hero-art .ring { top: -20px; left: -20px; right: -20px; bottom: -20px; }
 }
 
 /* ---------- notices ---------- */
@@ -592,4 +600,12 @@ fieldset { border: 0; padding: 0; margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Older phone browsers without aspect-ratio support */
+@supports not (aspect-ratio: 1) {
+  .t-photo { height: 260px; }
+  .ann-img { height: 190px; }
+  .gallery-grid img { height: 200px; }
+  @media (max-width: 760px) { .t-photo { height: 190px; } }
 }

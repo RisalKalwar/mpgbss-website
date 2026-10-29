@@ -73,7 +73,7 @@
       '<a class="btn ghost" href="#admissions">Admission details</a></div>' +
       '<ul class="chips reveal d3">' + list(c.hero.chips).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>" +
       "</div>" +
-      '<div class="hero-art"><div class="halo"><div class="crest-lg">' + logo(c) + "</div></div></div>" +
+      '<div class="hero-art"><div class="halo"><span class="ring"></span><div class="crest-lg">' + logo(c) + "</div></div></div>" +
       "</div>" +
       '<svg class="hero-wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="#f4f7fc" d="M0 70V30c240 30 480 40 720 20S1200 0 1440 20v50z"/></svg>' +
       "</section>";
