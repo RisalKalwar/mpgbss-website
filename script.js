@@ -15,7 +15,9 @@
     copy: '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>',
     wa: '<path d="M3 21l1.7-5A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/>',
     doc: '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',
-    person: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>'
+    person: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>',
+    cal: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    bell: '<path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4z"/><path d="M10 21h4"/>'
   };
   var VALUE_ICONS = ["book", "shield", "star", "cap"];
 
@@ -76,17 +78,36 @@
       '<svg class="hero-wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="#f4f7fc" d="M0 70V30c240 30 480 40 720 20S1200 0 1440 20v50z"/></svg>' +
       "</section>";
 
-    // Notices
-    var notices = list(c.notices);
-    if (notices.length) {
+    // Important announcements strip (just under the top banner)
+    var ann = c.announcements || {}, annItems = list(ann.items).filter(function (n) { return n.title; });
+    var important = annItems.filter(function (n) { return n.important; }).slice(0, 3);
+    if (important.length) {
       html += '<div class="notices"><div class="wrap"><div class="notice-list">' +
-        notices.map(function (n, i) {
-          return '<article class="notice reveal d' + (i % 3) + '"><div class="date">' + esc(n.date || "New") + "</div><h3>" + esc(n.title) + "</h3><p>" + esc(n.text) + "</p></article>";
+        important.map(function (n, i) {
+          return '<a class="notice reveal d' + (i % 3) + '" href="#announcements"><div class="date">' + esc(n.date || "New") + "</div><h3>" + esc(n.title) + "</h3><p>" + esc(n.text) + "</p></a>";
         }).join("") + "</div></div></div>";
     }
 
+    // Announcements
+    var SHOW = 6;
+    html += '<section id="announcements" class="ann-section"><div class="wrap">' + head(ann) +
+      (annItems.length
+        ? '<div class="ann-grid">' + annItems.map(function (n, i) {
+            return '<article class="ann reveal d' + (i % 3) + (n.important ? " important" : "") + '"' + (i >= SHOW ? " data-more hidden" : "") + ">" +
+              (n.image ? '<div class="ann-img"><img loading="lazy" src="' + esc(n.image) + '" alt=""></div>' : "") +
+              '<div class="ann-body"><div class="ann-meta">' +
+              (n.date ? '<span class="ann-date">' + icon("cal") + esc(n.date) + "</span>" : "") +
+              (n.category ? '<span class="ann-cat">' + esc(n.category) + "</span>" : "") +
+              (n.important ? '<span class="ann-imp">Important</span>' : "") +
+              "</div><h3>" + esc(n.title) + '</h3><div class="ann-text">' + paras(n.text) + "</div>" +
+              '<button class="ann-toggle" type="button" hidden>Read more</button></div></article>';
+          }).join("") + "</div>" +
+          (annItems.length > SHOW ? '<div class="center-btn"><button class="btn line" type="button" id="ann-all">View all announcements (' + annItems.length + ")</button></div>" : "")
+        : '<div class="empty reveal">' + icon("bell") + "<p>No announcements right now. Please check back soon.</p></div>") +
+      "</div></section>";
+
     // Values / About
-    html += '<section id="about"><div class="wrap">' + head(c.values) +
+    html += '<section id="about" class="alt"><div class="wrap">' + head(c.values) +
       '<div class="values-grid">' + list(c.values.items).map(function (v, i) {
         return '<div class="value reveal d' + (i % 4) + '"><div class="ico">' + icon(VALUE_ICONS[i % 4]) + "</div><h3>" + esc(v.title) + "</h3><p>" + esc(v.text) + "</p></div>";
       }).join("") + "</div></div></section>";
@@ -109,9 +130,29 @@
         }).join("") + "</div></div></div></div></section>";
     }
 
+    // Teachers
+    var t = c.teachers || {}, teachers = list(t.list).filter(function (x) { return x.name; });
+    var groups = [];
+    teachers.forEach(function (x) { if (x.section && groups.indexOf(x.section) < 0) groups.push(x.section); });
+    html += '<section id="teachers" class="alt"><div class="wrap">' + head(t) +
+      (teachers.length
+        ? (groups.length > 1 ? '<div class="filters reveal" role="group" aria-label="Filter teachers"><button type="button" class="on" data-filter="">All</button>' +
+            groups.map(function (g) { return '<button type="button" data-filter="' + esc(g) + '">' + esc(g) + "</button>"; }).join("") + "</div>" : "") +
+          '<div class="teacher-grid">' + teachers.map(function (x, i) {
+            return '<article class="teacher reveal d' + (i % 4) + '" data-section="' + esc(x.section || "") + '">' +
+              '<div class="t-photo">' + (x.photo ? '<img loading="lazy" src="' + esc(x.photo) + '" alt="' + esc(x.name) + '">' : '<span class="t-init">' + esc(initials(x.name)) + "</span>") +
+              (x.section ? '<span class="t-sec">' + esc(x.section) + "</span>" : "") + "</div>" +
+              '<div class="t-body"><h3>' + esc(x.name) + "</h3>" +
+              (x.subject ? '<div class="t-subj">' + esc(x.subject) + "</div>" : "") +
+              (x.qualification ? '<div class="t-qual">' + icon("cap") + esc(x.qualification) + "</div>" : "") +
+              (x.bio ? '<p class="t-bio">' + esc(x.bio) + "</p>" : "") + "</div></article>";
+          }).join("") + "</div>"
+        : '<div class="empty reveal">' + icon("person") + "<p>Teacher profiles will be added soon.</p></div>") +
+      "</div></section>";
+
     // Classes
     var k = c.classes_section;
-    html += '<section class="alt" id="classes"><div class="wrap">' + head(k) +
+    html += '<section id="classes"><div class="wrap">' + head(k) +
       '<div class="sec-grid">' +
       '<div class="sec-card girls reveal"><span class="big">1–5</span><span class="tag">' + esc(k.girls.tag) + "</span><h3>" + esc(k.girls.title) + "</h3><p>" + esc(k.girls.text) + "</p></div>" +
       '<div class="sec-card boys reveal d1"><span class="big">6–10</span><span class="tag">' + esc(k.boys.tag) + "</span><h3>" + esc(k.boys.title) + "</h3><p>" + esc(k.boys.text) + "</p></div>" +
@@ -166,7 +207,7 @@
 
     // Contact
     var ct = c.contact;
-    html += '<section class="alt" id="contact"><div class="wrap">' + head(ct) +
+    html += '<section' + (photos.length ? "" : ' class="alt"') + ' id="contact"><div class="wrap">' + head(ct) +
       '<div class="contact-grid">' +
       '<div class="hm-card reveal"><div class="hm-top"><div class="avatar">' +
       (hm.photo ? '<img src="' + esc(hm.photo) + '" alt="' + esc(hm.name) + '">' : esc(initials(hm.name))) +
@@ -186,7 +227,7 @@
     // Footer
     document.getElementById("footer").innerHTML =
       '<div class="wrap"><div class="top"><div class="fbrand"><span class="crest-sm">' + logo(c) + "</span><div><h4>" + esc(s.name) + '</h4><div class="motto">' + esc(c.footer.motto) + "</div></div></div>" +
-      '<nav aria-label="Footer"><a href="#about">About</a><a href="#message">Message</a><a href="#classes">Classes</a><a href="#online">Online</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a></nav></div>' +
+      '<nav aria-label="Footer"><a href="#announcements">Announcements</a><a href="#about">About</a><a href="#message">Message</a><a href="#teachers">Teachers</a><a href="#classes">Classes</a><a href="#online">Online classes</a><a href="#admissions">Admissions</a><a href="#profile">Profile</a><a href="#contact">Contact</a></nav></div>' +
       '<div class="bottom"><span>© ' + new Date().getFullYear() + " " + esc(s.short_name) + "</span><span>Head Master: " + esc(hm.name) + ' · <a href="' + tel(hm.phone) + '">' + phoneTxt + "</a></span></div></div>";
 
     // Header, top bar, simple text bindings
@@ -288,6 +329,37 @@
         more.textContent = open ? "Read full message" : "Show less";
       });
     }
+
+    // Announcements: read more / view all
+    document.querySelectorAll(".ann").forEach(function (card) {
+      var txt = card.querySelector(".ann-text"), btn = card.querySelector(".ann-toggle");
+      txt.classList.add("clamp");
+      function check() { if (!card.hidden && txt.scrollHeight > txt.clientHeight + 4) { btn.hidden = false; txt.classList.add("over"); } }
+      check(); card._check = check;
+      btn.addEventListener("click", function () {
+        var open = txt.classList.toggle("clamp");
+        btn.textContent = open ? "Read more" : "Show less";
+      });
+    });
+    var allBtn = document.getElementById("ann-all");
+    if (allBtn) allBtn.addEventListener("click", function () {
+      document.querySelectorAll(".ann[data-more]").forEach(function (el) { el.hidden = false; if (el._check) el._check(); });
+      allBtn.parentNode.remove();
+    });
+
+    // Teachers filter
+    var fbtns = document.querySelectorAll(".filters button");
+    fbtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        fbtns.forEach(function (x) { x.classList.toggle("on", x === b); });
+        document.querySelectorAll(".teacher").forEach(function (card) {
+          var show = !f || card.getAttribute("data-section") === f;
+          card.hidden = !show;
+          if (show) { card.classList.remove("pop"); void card.offsetWidth; card.classList.add("pop"); }
+        });
+      });
+    });
 
     // Copy number
     document.querySelectorAll("[data-copy]").forEach(function (btn) {
