@@ -1,0 +1,187 @@
+# Editing panel for school staff (Pages CMS — https://app.pagescms.org)
+# Every field below shows up as a simple form. Staff never touch code.
+media:
+  input: images
+  output: images
+
+content:
+  - name: site
+    label: School website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: school
+        label: School details
+        type: object
+        fields:
+          - { name: name, label: School name, type: string }
+          - { name: full_name, label: Full school name, type: string }
+          - { name: short_name, label: Short name, type: string }
+          - { name: crest_ring, label: Text around the crest, type: string }
+          - { name: crest_ribbon, label: Text on the crest ribbon, type: string }
+          - { name: logo, label: "Logo image (leave empty to use the built-in crest)", type: image }
+          - { name: type, label: School type, type: string }
+          - { name: classes, label: Classes, type: string }
+          - { name: sections, label: Sections, type: string }
+          - { name: location, label: Location, type: string }
+
+      - name: headmaster
+        label: Head Master
+        type: object
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: phone, label: "Phone number (e.g. 03083567080)", type: string }
+          - { name: photo, label: Photo (optional), type: image }
+
+      - name: announcement
+        label: Top announcement
+        type: object
+        fields:
+          - { name: show, label: Show announcement, type: boolean }
+          - { name: text_en, label: Text (English), type: string }
+          - { name: text_ur, label: Text (Urdu), type: string }
+
+      - name: hero
+        label: Top banner
+        type: object
+        fields:
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - { name: chips, label: Highlight tags, type: string, list: true }
+
+      - name: notices
+        label: Notice board
+        type: object
+        list: true
+        fields:
+          - { name: date, label: "Date or label (e.g. 12 Nov, New)", type: string }
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Details, type: text }
+
+      - name: values
+        label: What we stand for
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: items
+            label: Values
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+      - name: minister
+        label: Minister's message
+        type: object
+        fields:
+          - { name: show, label: Show this section, type: boolean }
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: role, label: Title / role, type: string }
+          - { name: name, label: Minister's name (optional), type: string }
+          - { name: photo, label: Photo (optional), type: image }
+          - { name: message, label: "Message (leave an empty line between paragraphs)", type: text }
+          - name: stats
+            label: Figures
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Number, type: string }
+              - { name: label, label: Label, type: string }
+
+      - name: classes_section
+        label: Classes and sections
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: girls
+            label: Girls section
+            type: object
+            fields:
+              - { name: tag, label: Tag, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+          - name: boys
+            label: Boys section
+            type: object
+            fields:
+              - { name: tag, label: Tag, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+      - name: online
+        label: Online classes
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: points
+            label: Points
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+
+      - name: admissions
+        label: Admissions
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: steps
+            label: Steps
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: text }
+          - { name: documents, label: Documents to bring, type: string, list: true }
+          - { name: callout_title, label: Reminder box heading, type: string }
+          - { name: callout_text, label: Reminder box text, type: text }
+          - { name: banner_title, label: Blue banner heading, type: string }
+          - { name: banner_text, label: Blue banner text, type: string }
+
+      - name: gallery
+        label: Photo gallery
+        type: object
+        fields:
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: photos
+            label: Photos (the gallery appears once you add one)
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Photo, type: image }
+              - { name: caption, label: Caption, type: string }
+
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - { name: address, label: Address (optional), type: text }
+          - { name: email, label: Email (optional), type: string }
+          - name: steps
+            label: Visit steps
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: text, label: Text, type: string }
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: motto, label: Motto, type: string }
