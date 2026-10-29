@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metropolis Govt Boys Secondary School · Saddar Town</title>
+  <meta name="description" content="Metropolis Government Boys Secondary School (M.P.G.B.S.S), Saddar Town. Class 1 to 10, girls' primary and boys' secondary sections. Admissions open.">
+  <meta name="theme-color" content="#0a2351">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;800;900&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- School crest (logo). Colours follow the site theme. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <style>
+    .c-ink { fill: #0a2351; }
+    .c-gold { fill: #d4a72c; }
+    .c-paper { fill: #fff; stroke: #0a2351; stroke-width: 3; stroke-linejoin: round; }
+    .c-line { stroke: #9fb0cf; stroke-width: 2; fill: none; }
+    .c-ring { font-family: Merriweather, Georgia, serif; font-weight: 800; font-size: 25px; fill: #0a2351; }
+    .c-rib { font-family: Merriweather, Georgia, serif; font-weight: 800; font-size: 19px; fill: #0a2351; }
+  </style>
+  <symbol id="crest" viewBox="0 0 400 420">
+    <defs>
+      <mask id="crescent-cut">
+        <rect width="400" height="420" fill="#fff"></rect>
+        <circle cx="200" cy="170" r="124" fill="#000"></circle>
+      </mask>
+      <path id="ring-path" d="M 42 205 A 158 158 0 0 1 358 205"></path>
+    </defs>
+    <circle class="c-ink" cx="200" cy="205" r="135" mask="url(#crescent-cut)"></circle>
+    <polygon class="c-ink" points="200,75 220,132.5 280.8,133.7 232.3,170.5 250,228.8 200,194 150,228.8 167.7,170.5 119.2,133.7 180,132.5"></polygon>
+    <path class="c-paper" d="M148 150 L198 163 L198 207 L148 194 Z"></path>
+    <path class="c-paper" d="M252 150 L202 163 L202 207 L252 194 Z"></path>
+    <path class="c-line" d="M158 163 L190 171 M158 173 L190 181 M158 183 L190 191 M242 163 L210 171 M242 173 L210 181 M242 183 L210 191"></path>
+    <path class="c-gold" d="M262 112 C 240 126 214 148 194 184 C 189 194 185 202 180 212 C 200 206 232 182 246 156 C 254 142 262 128 262 112 Z"></path>
+    <path d="M262 112 L180 212" stroke="#fff" stroke-width="2" fill="none" opacity=".7"></path>
+    <ellipse class="c-ink" cx="168" cy="216" rx="12" ry="8"></ellipse>
+    <text class="c-ring" text-anchor="middle" textLength="468" lengthAdjust="spacing">
+      <textPath href="#ring-path" startOffset="50%" id="crest-ring-text">METROPOLIS GOVT BOYS SEC SCHOOL</textPath>
+    </text>
+    <polygon class="c-ink" points="28,362 62,350 62,396 28,408 46,385"></polygon>
+    <polygon class="c-ink" points="372,362 338,350 338,396 372,408 354,385"></polygon>
+    <rect class="c-paper" x="62" y="350" width="276" height="46" rx="3"></rect>
+    <text class="c-rib" x="200" y="381" text-anchor="middle" textLength="236" lengthAdjust="spacing" id="crest-rib-text">M.P.G.B.S.S SADDAR TOWN</text>
+    <text class="c-gold" x="45" y="395" text-anchor="middle" font-size="16">★</text>
+    <text class="c-gold" x="355" y="395" text-anchor="middle" font-size="16">★</text>
+  </symbol>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="ticker" id="ticker"></div>
+    <a id="top-phone" href="#contact"></a>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="crest-sm" data-logo></span>
+      <span>
+        <span class="brand-name" data-text="school.name"></span><br>
+        <span class="brand-sub" data-text="school.short_name"></span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#message">Message</a>
+      <a href="#classes">Classes</a>
+      <a href="#online">Online</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn gold apply-top" type="button" data-apply>Apply now</button>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <p style="padding:60px 16px;text-align:center;color:#56647f" id="loading">Loading…</p>
+</main>
+
+<footer class="footer" id="footer"></footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg>
+</button>
+
+<!-- Admission form -->
+<div class="modal" id="apply" hidden role="dialog" aria-modal="true" aria-labelledby="apply-title">
+  <div class="sheet">
+    <div class="sheet-head">
+      <div>
+        <div class="role">Admission form</div>
+        <h3 id="apply-title">Apply for admission</h3>
+        <p>Fill in the details below. It takes one minute.</p>
+      </div>
+      <button class="x" type="button" data-close aria-label="Close the form">×</button>
+    </div>
+
+    <form id="apply-form" novalidate>
+      <div>
+        <label for="f-name">Student's full name</label>
+        <input id="f-name" type="text" autocomplete="off" placeholder="Name of the child">
+        <span class="err" id="e-name" hidden></span>
+      </div>
+      <div>
+        <label for="f-guardian">Father or guardian's name <span class="opt">(optional)</span></label>
+        <input id="f-guardian" type="text" autocomplete="off">
+      </div>
+      <div>
+        <label for="f-phone">Your phone number</label>
+        <input id="f-phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="03XX XXXXXXX" maxlength="16">
+        <span class="err" id="e-phone" hidden></span>
+      </div>
+      <fieldset>
+        <div class="legend" id="g-label">Student is</div>
+        <div class="seg" role="radiogroup" aria-labelledby="g-label">
+          <label><input type="radio" name="gender" value="Male"><span>Male</span></label>
+          <label><input type="radio" name="gender" value="Female"><span>Female</span></label>
+        </div>
+        <span class="err" id="e-gender" hidden></span>
+      </fieldset>
+      <p class="hint" id="sec-note" hidden></p>
+      <div>
+        <label for="f-class">Admission in which class</label>
+        <select id="f-class">
+          <option value="">Choose a class</option>
+          <option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option>
+          <option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option>
+        </select>
+        <span class="err" id="e-class" hidden></span>
+      </div>
+      <fieldset>
+        <div class="legend" id="m-label">How will the student study</div>
+        <div class="seg" role="radiogroup" aria-labelledby="m-label">
+          <label><input type="radio" name="mode" value="In school" checked><span>In school</span></label>
+          <label><input type="radio" name="mode" value="Online class"><span>Online class</span></label>
+        </div>
+      </fieldset>
+      <div>
+        <label for="f-area">Where does the student live</label>
+        <input id="f-area" type="text" autocomplete="street-address" placeholder="Area, street or mohalla">
+        <span class="err" id="e-area" hidden></span>
+      </div>
+      <button class="btn" type="submit">Prepare my admission details</button>
+    </form>
+
+    <div class="done" id="apply-done" hidden>
+      <h4>Your admission details are ready</h4>
+      <p class="hint">Nothing has been sent yet. Send these details to the Head Master, <span data-text="headmaster.name"></span>, on <b data-text="headmaster.phone"></b> by WhatsApp, or read them out when you call.</p>
+      <textarea class="sum" id="apply-sum" readonly aria-label="Admission details"></textarea>
+      <div class="actions">
+        <a class="btn wa" id="apply-wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+        <button class="btn line" type="button" id="apply-copy">Copy details</button>
+        <a class="btn line" id="apply-call" href="#">Call Head Master</a>
+        <button class="btn line" type="button" id="apply-edit">Change details</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

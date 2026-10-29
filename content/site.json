@@ -1,0 +1,128 @@
+{
+  "school": {
+    "name": "Metropolis Govt Boys Secondary School",
+    "full_name": "Metropolis Government Boys Secondary School",
+    "short_name": "M.P.G.B.S.S Saddar Town",
+    "crest_ring": "METROPOLIS GOVT BOYS SEC SCHOOL",
+    "crest_ribbon": "M.P.G.B.S.S SADDAR TOWN",
+    "logo": "",
+    "type": "Government school",
+    "classes": "Class 1 to Class 10",
+    "sections": "Girls primary · Boys secondary",
+    "location": "Saddar Town, Karachi"
+  },
+  "headmaster": {
+    "name": "Sajed Ali Rao",
+    "phone": "03083567080",
+    "photo": ""
+  },
+  "announcement": {
+    "show": true,
+    "text_en": "Admissions open",
+    "text_ur": "داخلے جاری ہیں"
+  },
+  "hero": {
+    "title": "Metropolis Government Boys Secondary School",
+    "intro": "A government school in Saddar Town with a girls' primary section and a boys' secondary section, from Class 1 to Class 10. Meet the Head Master, bring the listed documents and secure a seat for your child.",
+    "chips": ["Class 1 to 10", "Girls primary", "Boys secondary", "Online classes"]
+  },
+  "notices": [
+    {
+      "date": "Now",
+      "title": "Admissions are open",
+      "text": "Admission is open in both the girls' primary section and the boys' secondary section. Call the Head Master to confirm seats and dates."
+    }
+  ],
+  "values": {
+    "eyebrow": "What we stand for",
+    "title": "Learning with discipline and character",
+    "intro": "Our crest shows a star, an open book and a quill. They stand for light, knowledge and writing, the three things every student at M.P.G.B.S.S is encouraged to carry forward.",
+    "items": [
+      { "title": "Learning", "text": "Lessons built on strong basics in every subject." },
+      { "title": "Discipline", "text": "Respect, punctuality and good manners in school." },
+      { "title": "Character", "text": "Honesty, teamwork and care for others." },
+      { "title": "Future", "text": "Preparing every student for Matriculation and beyond." }
+    ]
+  },
+  "minister": {
+    "show": true,
+    "eyebrow": "Message",
+    "role": "Minister for Education and Literacy",
+    "name": "",
+    "photo": "",
+    "message": "I want to emphasize the critical importance of enhancing the quality of education across our province. It is our duty to invest in teacher training programs, ensuring that our educators possess the essential skills and knowledge necessary to provide high-quality education. Furthermore, we must continually update our curriculum to align with modern educational standards and incorporate innovative teaching methods that will significantly benefit our students' learning outcomes.\n\nEqually vital is our commitment to prioritizing the provision of educational resources, including textbooks, learning materials, and technology, to all schools in Sindh. This equitable distribution of resources will grant our students access to up-to-date information, enriching their overall learning experience. By addressing these key areas, we can make significant improvements in the state of education in our beloved Sindh province, ultimately providing a brighter and more promising future for our children.\n\nI also wish to take this opportunity to highlight the numerous initiatives undertaken by the Sindh government to improve the lives of our people and uphold the quality of education. According to official data from the Finance Division, Sindh boasts a literacy rate of 61.8%, ranking second among all four provinces, including literacy rates for youth and adults. We have tirelessly worked on multiple fronts, including bringing out-of-school children back into the educational fold, enhancing the quality of education, and providing comprehensive teacher training.\n\nIn the fiscal year 2023, the Sindh government allocated Rs. 34.2 billion for 397 ongoing and 332 new development projects within the education sector. It is worth noting that the Teacher Licensing initiative is in its final stages of preparation and will soon be open to the public.\n\nDespite facing various constraints and challenges, Sindh remains steadfast in its commitment to improving the lives of its people and serving as a beacon of progress. I extend my heartfelt gratitude to each one of those, who played a vital role towards the education sector, particularly in the province of Sindh. Together, we can build a brighter and more prosperous future for Sindh and its citizens through education.",
+    "stats": [
+      { "value": "61.8%", "label": "Literacy rate in Sindh" },
+      { "value": "Rs. 34.2 bn", "label": "Education development, FY 2023" },
+      { "value": "397", "label": "Ongoing education projects" },
+      { "value": "332", "label": "New education projects" }
+    ]
+  },
+  "classes_section": {
+    "eyebrow": "Classes and sections",
+    "title": "Class 1 to Class 10, in two sections",
+    "intro": "Our school has a primary section for girls and a secondary section for boys. Admission is open in both sections.",
+    "girls": {
+      "tag": "Girls",
+      "title": "Primary Section",
+      "text": "The girls' primary section teaches the early classes, where every child learns reading, writing and numbers on strong foundations."
+    },
+    "boys": {
+      "tag": "Boys",
+      "title": "Secondary Section",
+      "text": "The boys' secondary section carries students up to Class 10 and prepares them for the Matriculation examination."
+    }
+  },
+  "online": {
+    "eyebrow": "Online classes",
+    "title": "Study online from home",
+    "intro": "Online class is an option with admission. Choose \"Online class\" in the admission form, and the Head Master will tell you the timings and how to join.",
+    "points": [
+      { "title": "Pick it in the form", "text": "Select \"Online class\" under how the student will study." },
+      { "title": "Same admission steps", "text": "The documents and steps are the same as for school classes." },
+      { "title": "Details from the Head Master", "text": "Ask for class timings and joining details on 03083567080." }
+    ]
+  },
+  "admissions": {
+    "eyebrow": "Admissions",
+    "title": "How to get your child admitted",
+    "intro": "Admissions for girls (primary) and boys (secondary) are handled directly by the Head Master. Follow the four steps and bring the documents listed below.",
+    "steps": [
+      { "title": "Call the Head Master", "text": "Ask which classes have seats and the last date for admission." },
+      { "title": "Visit the school office", "text": "Come with your child and a parent or guardian, and collect the admission form." },
+      { "title": "Submit form and documents", "text": "Hand in the filled form together with the documents from the checklist." },
+      { "title": "Receive confirmation", "text": "The school confirms the seat and tells you when your child should start." }
+    ],
+    "documents": [
+      "Child's B-Form (Form-B) and a photocopy",
+      "Father or guardian's CNIC photocopy",
+      "Last class result card (if your child is coming from another school)",
+      "School Leaving Certificate from the previous school",
+      "Recent passport-size photographs of the student"
+    ],
+    "callout_title": "Call before you visit",
+    "callout_text": "Seats, classes and dates can change from year to year. A quick call to the Head Master makes sure you bring the right papers on the first visit.",
+    "banner_title": "Admissions are open. Secure your child's seat today.",
+    "banner_text": "Call the Head Master, Sajed Ali Rao, on 03083567080."
+  },
+  "gallery": {
+    "title": "School gallery",
+    "intro": "Moments from classrooms, events and school life.",
+    "photos": []
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Talk to the Head Master",
+    "intro": "For admission, seats, dates or any question about the school, call the Head Master directly.",
+    "address": "",
+    "email": "",
+    "steps": [
+      { "title": "Call first", "text": "Confirm seats and dates." },
+      { "title": "Bring documents", "text": "B-Form, CNIC, result card, photos." },
+      { "title": "Come with a guardian", "text": "The Head Master meets you and your child." }
+    ]
+  },
+  "footer": {
+    "motto": "Light, knowledge and writing."
+  }
+}
