@@ -50,14 +50,27 @@ content:
           - { name: intro, label: Introduction, type: text }
           - { name: chips, label: Highlight tags, type: string, list: true }
 
-      - name: notices
-        label: Notice board
+      - name: announcements
+        label: Announcements
         type: object
-        list: true
         fields:
-          - { name: date, label: "Date or label (e.g. 12 Nov, New)", type: string }
-          - { name: title, label: Title, type: string }
-          - { name: text, label: Details, type: text }
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: items
+            label: "Announcements (the first one shows first; drag to reorder)"
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{date} · {title}"
+            fields:
+              - { name: date, label: "Date (e.g. 12 Nov 2026)", type: string }
+              - { name: title, label: Title, type: string }
+              - { name: category, label: "Category (e.g. Admissions, Holiday, Exams, Result, Event)", type: string }
+              - { name: important, label: "Important (also shows at the top of the website)", type: boolean }
+              - { name: text, label: "Details (leave an empty line between paragraphs)", type: text }
+              - { name: image, label: Picture (optional), type: image }
 
       - name: values
         label: What we stand for
@@ -91,6 +104,32 @@ content:
             fields:
               - { name: value, label: Number, type: string }
               - { name: label, label: Label, type: string }
+
+      - name: teachers
+        label: Teachers
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading, type: string }
+          - { name: title, label: Heading, type: string }
+          - { name: intro, label: Introduction, type: text }
+          - name: list
+            label: Teachers
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name} · {subject}"
+            fields:
+              - { name: name, label: Full name, type: string }
+              - { name: subject, label: "Subject(s) (e.g. Mathematics, Science)", type: string }
+              - { name: qualification, label: "Qualification (e.g. M.Sc Physics, B.Ed)", type: string }
+              - name: section
+                label: Section
+                type: select
+                options:
+                  values: [Girls Primary, Boys Secondary, Both sections]
+              - { name: photo, label: Photo, type: image }
+              - { name: bio, label: Short introduction (optional), type: text }
 
       - name: classes_section
         label: Classes and sections
