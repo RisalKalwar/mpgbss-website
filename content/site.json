@@ -146,7 +146,12 @@
   },
   "gallery": {
     "title": "School gallery",
-    "intro": "Moments from classrooms, events and school life."
+    "intro": "Moments from classrooms, events and school life.",
+    "photos": [
+      {
+        "image": "images/098f6dea-4385-4fe4-8ada-bab0498db8a4.jpeg"
+      }
+    ]
   },
   "contact": {
     "eyebrow": "Contact",
