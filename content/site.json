@@ -98,7 +98,126 @@
     "title": "Teacher ",
     "intro": "1. Sir saleemuddin (S.L.T)\n2. Sir mubashir (S.S.T)\n3. Sir Rashid Imran (P.S.T)\n4. SIR MUNEER ABBASI\n5· MISS MEHREN (J.E.S.T)\n6· SIR SHABBIR (J.ES.T)\n7· MISS ALISHA (J.E.S.T)\n8· MISS KOMAL (P.S.T)\n9· MISS SUMERA (J.E.S.T)\n10· MISS ZEENAT (P.S.T)\n11· MISS AFREEN (H.S.T)\n12· MISS SAIRA (J.E.S.T)\n13· MISS RUMMESHA (J.E.S.T)\n14· MISS FARIA (J.E.S.T)\n15· SIR ZAHID (J.E.S.T)\n16· MISS NAVITA (J.E.S.T)\n17· MISS SAEEDA (J.E.S.T)\n18· SIR GUL ZAMEER (S.S.T)\n19· SIR EHTISHAM (J.E.S.T)\n20· SIR A. KAMRAN (J.E.S.T)\n",
     "list": [
-      {}
+      {
+        "name": "Sir saleemuddin ",
+        "subject": "Sindhi",
+        "qualification": "(S.L.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir mubashir ",
+        "subject": "Mathematics ",
+        "qualification": "(S.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir Rashid Imran ",
+        "subject": "Arabic ",
+        "qualification": "(P.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Sir Muneer abbasi ",
+        "subject": "Mathematics ",
+        "qualification": "(H.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Miss Mehreen ",
+        "subject": "Computer ",
+        "qualification": "(J.E.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir Shabbir",
+        "subject": "Science ",
+        "qualification": "(J.E.S.T)",
+        "section": "Girls Primary"
+      },
+      {
+        "name": "Miss Alisha",
+        "subject": "Class E.C.E teacher ",
+        "qualification": "(J.E.S.T)",
+        "section": "Girls Primary"
+      },
+      {
+        "name": "Miss komal",
+        "subject": "Class 1 teacher ",
+        "qualification": "(P.S.T)",
+        "section": "Girls Primary"
+      },
+      {
+        "name": "Miss Sumera",
+        "subject": "Class 2 teacher ",
+        "qualification": "(J.E.S.T)",
+        "section": "Girls Primary"
+      },
+      {
+        "name": "Miss Zeenat",
+        "subject": "Class 3 teacher ",
+        "qualification": "(P.S.T)",
+        "section": "Girls Primary"
+      },
+      {
+        "name": "Miss afreen ",
+        "subject": "Urdu",
+        "qualification": "(H.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Miss Saira",
+        "subject": "Science ",
+        "qualification": "(J.E.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Miss Rummesha ",
+        "subject": "English ",
+        "qualification": "(J.E.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Miss Faria ",
+        "subject": "Social studies ",
+        "qualification": "(J.E.S.T)",
+        "section": "Both sections"
+      },
+      {
+        "name": "Sir Zahid",
+        "subject": "Social studies ",
+        "qualification": "(J.E.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Miss Navita ",
+        "subject": "Biology ",
+        "qualification": "(J.E.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Miss Saeeda",
+        "subject": "Islamiat ",
+        "qualification": "(J.E.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir Gul Zameer ",
+        "subject": "English ",
+        "qualification": "(S.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir Ehtisham ",
+        "subject": "Urdu ",
+        "qualification": "(J.E.S.T)",
+        "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir A.Kamran",
+        "subject": "Chemistry ",
+        "qualification": "(J E.S.T)",
+        "section": "Boys Secondary"
+      }
     ]
   },
   "classes_section": {
