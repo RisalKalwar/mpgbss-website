@@ -71,6 +71,8 @@
     "show": true,
     "eyebrow": "Message",
     "role": "Minister for Education and Literacy",
+    "name": "Syed Sardar Ali shah ",
+    "photo": "images/IMG-20261104-WA0000.jpg",
     "message": "I want to emphasize the critical importance of enhancing the quality of education across our province. It is our duty to invest in teacher training programs, ensuring that our educators possess the essential skills and knowledge necessary to provide high-quality education. Furthermore, we must continually update our curriculum to align with modern educational standards and incorporate innovative teaching methods that will significantly benefit our students' learning outcomes.\n\nEqually vital is our commitment to prioritizing the provision of educational resources, including textbooks, learning materials, and technology, to all schools in Sindh. This equitable distribution of resources will grant our students access to up-to-date information, enriching their overall learning experience. By addressing these key areas, we can make significant improvements in the state of education in our beloved Sindh province, ultimately providing a brighter and more promising future for our children.\n\nI also wish to take this opportunity to highlight the numerous initiatives undertaken by the Sindh government to improve the lives of our people and uphold the quality of education. According to official data from the Finance Division, Sindh boasts a literacy rate of 61.8%, ranking second among all four provinces, including literacy rates for youth and adults. We have tirelessly worked on multiple fronts, including bringing out-of-school children back into the educational fold, enhancing the quality of education, and providing comprehensive teacher training.\n\nIn the fiscal year 2023, the Sindh government allocated Rs. 34.2 billion for 397 ongoing and 332 new development projects within the education sector. It is worth noting that the Teacher Licensing initiative is in its final stages of preparation and will soon be open to the public.\n\nDespite facing various constraints and challenges, Sindh remains steadfast in its commitment to improving the lives of its people and serving as a beacon of progress. I extend my heartfelt gratitude to each one of those, who played a vital role towards the education sector, particularly in the province of Sindh. Together, we can build a brighter and more prosperous future for Sindh and its citizens through education.",
     "stats": [
       {
@@ -90,6 +92,11 @@
         "label": "New education projects"
       }
     ]
+  },
+  "teachers": {
+    "eyebrow": "Primary Faculty Members ",
+    "title": "Teacher ",
+    "intro": "1. Sir saleemuddin (S.L.T)\n2. Sir mubashir (S.S.T)\n3. Sir Rashid Imran (P.S.T)\n4. SIR MUNEER ABBASI\n5· MISS MEHREN (J.E.S.T)\n6· SIR SHABBIR (J.ES.T)\n7· MISS ALISHA (J.E.S.T)\n8· MISS KOMAL (P.S.T)\n9· MISS SUMERA (J.E.S.T)\n10· MISS ZEENAT (P.S.T)\n11· MISS AFREEN (H.S.T)\n12· MISS SAIRA (J.E.S.T)\n13· MISS RUMMESHA (J.E.S.T)\n14· MISS FARIA (J.E.S.T)\n15· SIR ZAHID (J.E.S.T)\n16· MISS NAVITA (J.E.S.T)\n17· MISS SAEEDA (J.E.S.T)\n18· SIR GUL ZAMEER (S.S.T)\n19· SIR EHTISHAM (J.E.S.T)\n20· SIR A. KAMRAN (J.E.S.T)\n"
   },
   "classes_section": {
     "eyebrow": "Classes and sections",
