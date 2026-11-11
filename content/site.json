@@ -13,7 +13,8 @@
   },
   "headmaster": {
     "name": "Sajed Ali Rao",
-    "phone": "03083567080"
+    "phone": "03083567080",
+    "photo": "images/IMG-20261110-WA0001.jpg"
   },
   "announcement": {
     "show": true,
@@ -28,6 +29,19 @@
       "Girls primary",
       "Boys secondary",
       "Online classes"
+    ]
+  },
+  "announcements": {
+    "eyebrow": "Sports Week-December 2026",
+    "title": "Annual Sports Week 2026",
+    "intro": "Our school will organize exciting Sports Week activities during the second week of December 2026.\nStudents will participate in different indoor and outdoor games to promote teamwork, confidence, discipline and sportsmanship.",
+    "items": [
+      {
+        "date": "14th December 226",
+        "title": "Sports Week ",
+        "important": true,
+        "image": "images/FB_IMG_1794335474225.jpg"
+      }
     ]
   },
   "values": {
