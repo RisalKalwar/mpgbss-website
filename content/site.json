@@ -96,7 +96,10 @@
   "teachers": {
     "eyebrow": "Primary Faculty Members ",
     "title": "Teacher ",
-    "intro": "1. Sir saleemuddin (S.L.T)\n2. Sir mubashir (S.S.T)\n3. Sir Rashid Imran (P.S.T)\n4. SIR MUNEER ABBASI\n5· MISS MEHREN (J.E.S.T)\n6· SIR SHABBIR (J.ES.T)\n7· MISS ALISHA (J.E.S.T)\n8· MISS KOMAL (P.S.T)\n9· MISS SUMERA (J.E.S.T)\n10· MISS ZEENAT (P.S.T)\n11· MISS AFREEN (H.S.T)\n12· MISS SAIRA (J.E.S.T)\n13· MISS RUMMESHA (J.E.S.T)\n14· MISS FARIA (J.E.S.T)\n15· SIR ZAHID (J.E.S.T)\n16· MISS NAVITA (J.E.S.T)\n17· MISS SAEEDA (J.E.S.T)\n18· SIR GUL ZAMEER (S.S.T)\n19· SIR EHTISHAM (J.E.S.T)\n20· SIR A. KAMRAN (J.E.S.T)\n"
+    "intro": "1. Sir saleemuddin (S.L.T)\n2. Sir mubashir (S.S.T)\n3. Sir Rashid Imran (P.S.T)\n4. SIR MUNEER ABBASI\n5· MISS MEHREN (J.E.S.T)\n6· SIR SHABBIR (J.ES.T)\n7· MISS ALISHA (J.E.S.T)\n8· MISS KOMAL (P.S.T)\n9· MISS SUMERA (J.E.S.T)\n10· MISS ZEENAT (P.S.T)\n11· MISS AFREEN (H.S.T)\n12· MISS SAIRA (J.E.S.T)\n13· MISS RUMMESHA (J.E.S.T)\n14· MISS FARIA (J.E.S.T)\n15· SIR ZAHID (J.E.S.T)\n16· MISS NAVITA (J.E.S.T)\n17· MISS SAEEDA (J.E.S.T)\n18· SIR GUL ZAMEER (S.S.T)\n19· SIR EHTISHAM (J.E.S.T)\n20· SIR A. KAMRAN (J.E.S.T)\n",
+    "list": [
+      {}
+    ]
   },
   "classes_section": {
     "eyebrow": "Classes and sections",
@@ -175,13 +178,35 @@
         "caption": "First Term Result 2026-27"
       },
       {
-        "image": "images/IMG-20261110-WA0276-1.jpg"
+        "image": "images/IMG-20261110-WA0276-1.jpg",
+        "caption": "14 august 2026"
       },
       {
-        "image": "images/IMG-20261110-WA0270-2.jpg"
+        "image": "images/IMG-20261110-WA0270-2.jpg",
+        "caption": "Sports Week "
       },
       {
         "image": "images/IMG-20261110-WA0274-1.jpg"
+      },
+      {
+        "image": "images/FB_IMG_1794335195536-1.jpg",
+        "caption": "Teacher's day 2026"
+      },
+      {
+        "image": "images/FB_IMG_1794335380571.jpg",
+        "caption": "Milad-un-nabi 2026"
+      },
+      {
+        "image": "images/FB_IMG_1794335581851.jpg"
+      },
+      {
+        "image": "images/IMG-20261110-WA0272.jpg"
+      },
+      {
+        "image": "images/FB_IMG_1794335280818.jpg"
+      },
+      {
+        "image": "images/FB_IMG_1794335219206.jpg"
       }
     ]
   },
