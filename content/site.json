@@ -125,13 +125,13 @@
       {
         "name": "Miss Mehreen ",
         "subject": "Computer ",
-        "qualification": "(J.E.S.T)",
+        "qualification": "(J.E.S.T) (STREAM leader)",
         "section": "Boys Secondary"
       },
       {
         "name": "Sir Shabbir",
         "subject": "Science ",
-        "qualification": "(J.E.S.T)",
+        "qualification": "(J.E.S.T) (Discipline management)",
         "section": "Girls Primary"
       },
       {
@@ -143,7 +143,7 @@
       {
         "name": "Miss komal",
         "subject": "Class 1 teacher ",
-        "qualification": "(P.S.T)",
+        "qualification": "(P.S.T) (Focal person)",
         "section": "Girls Primary"
       },
       {
@@ -191,7 +191,7 @@
       {
         "name": "Miss Navita ",
         "subject": "Biology ",
-        "qualification": "(J.E.S.T)",
+        "qualification": "(J.E.S.T) (Admission Incharge)",
         "section": "Boys Secondary"
       },
       {
@@ -217,6 +217,10 @@
         "subject": "Chemistry ",
         "qualification": "(J E.S.T)",
         "section": "Boys Secondary"
+      },
+      {
+        "name": "Sir A.Razzak",
+        "qualification": "Section Head"
       }
     ]
   },
