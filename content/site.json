@@ -100,7 +100,8 @@
     "list": [
       {
         "name": "MR.Abdul Razzaque",
-        "qualification": "(H.S.T)"
+        "qualification": "(H.S.T)",
+        "photo": "images/IMG-20261119-WA0166.jpg"
       },
       {
         "name": "MST.Afreen Majeed",
@@ -108,39 +109,48 @@
       },
       {
         "name": "MR.Gul Zameer",
-        "qualification": "(S.S.T)"
+        "qualification": "(S.S.T)",
+        "photo": "images/IMG-20261119-WA0164.jpg"
       },
       {
         "name": "MR.M Mubashir",
-        "qualification": "(S.S.T)"
+        "qualification": "(S.S.T)",
+        "photo": "images/IMG-20261119-WA0149.jpg"
       },
       {
         "name": "MR.Saleemuddin",
-        "qualification": "(S.L.T)"
+        "qualification": "(S.L.T)",
+        "photo": "images/IMG-20261119-WA0145.jpg"
       },
       {
         "name": "MR.Munir Hussain",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0148.jpg"
       },
       {
         "name": "MST.Navita Rafiq",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0146.jpg"
       },
       {
         "name": "MST.Saira Aftab",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0161.jpg"
       },
       {
         "name": "MST.Alisha Rafi",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0162.jpg"
       },
       {
         "name": "MR.Abdul Hafeez Kamran",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0167.jpg"
       },
       {
         "name": "MR.Ehtisham Parvez",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0152.jpg"
       },
       {
         "name": "MR.Zahid Hussain",
@@ -148,7 +158,8 @@
       },
       {
         "name": "MR.Shabbir Ahmed",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0165.jpg"
       },
       {
         "name": "MST.Sumaira",
@@ -156,7 +167,8 @@
       },
       {
         "name": "MST.Faria Gazdar",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA0150.jpg"
       },
       {
         "name": "MST.Rumaisha Mufeez",
@@ -164,15 +176,18 @@
       },
       {
         "name": "MST.Mehreen Fatima",
-        "qualification": "(J.E.S.T)"
+        "qualification": "(J.E.S.T)",
+        "photo": "images/IMG-20261119-WA8118.jpg"
       },
       {
         "name": "MR.Rashid Imran",
-        "qualification": "(P.S.T)"
+        "qualification": "(P.S.T)",
+        "photo": "images/IMG-20261119-WA0151.jpg"
       },
       {
         "name": "MST.Zeenat Kalwar",
-        "qualification": "(P.S.T)"
+        "qualification": "(P.S.T)",
+        "photo": "images/IMG-20261119-WA0153.jpg"
       },
       {
         "name": "MST.Komal Kumari",
@@ -184,11 +199,13 @@
       },
       {
         "name": "MR.Umais Bhojani",
-        "qualification": "J.clerk"
+        "qualification": "J.clerk",
+        "photo": "images/IMG-20261119-WA0147.jpg"
       },
       {
         "name": "MR.Kashif M.Ishaq",
-        "qualification": "Lab.atten"
+        "qualification": "Lab.atten",
+        "photo": "images/IMG-20261119-WA0169.jpg"
       },
       {
         "name": "MR.Saeed Ahmed",
